@@ -1,0 +1,34 @@
+.tarea-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tarea-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.tarea-input:focus {
+  border-color: #4CAF50;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

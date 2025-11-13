@@ -1,0 +1,31 @@
+.tarea-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarea-item:hover {
+  transform: translateX(4px);
+}
+
+.tarea-item input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.tarea-item span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.tarea-item span.completada {
+  text-decoration: line-through;
+  color: #888;
+}
