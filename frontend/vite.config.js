@@ -21,6 +21,7 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    allowedHosts: ['todo-frontend-qa.onrender.com'], // 🔥 AGREGADO
   },
   build: {
     outDir: 'build',
