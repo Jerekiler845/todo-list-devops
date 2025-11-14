@@ -19,13 +19,13 @@ export default defineConfig({
     },
   },
 
-  // 🔥🔥 FIX PARA RENDER (QA + PROD)
+  // 🔥 Config para correr en Render (QA + PROD)
   server: {
-    host: true, // necesario para que Render lo exponga en 0.0.0.0
-    port: 3000, // puerto correcto
+    host: true, // expone en 0.0.0.0
+    port: 3000,
     allowedHosts: [
       'todo-frontend-qa.onrender.com',
-      'todo-frontend-prod.onrender.com'
+      'todo-frontend-prod-oacy.onrender.com', // ← TU HOST REAL DE PROD
     ],
   },
 
