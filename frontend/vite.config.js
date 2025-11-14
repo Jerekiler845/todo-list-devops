@@ -18,14 +18,21 @@ export default defineConfig({
       },
     },
   },
+
+  // 🔥🔥 FIX PARA RENDER (QA + PROD)
   server: {
-    port: 3000,
-    open: true,
-    allowedHosts: ['todo-frontend-qa.onrender.com'], // 🔥 AGREGADO
+    host: true, // necesario para que Render lo exponga en 0.0.0.0
+    port: 3000, // puerto correcto
+    allowedHosts: [
+      'todo-frontend-qa.onrender.com',
+      'todo-frontend-prod.onrender.com'
+    ],
   },
+
   build: {
     outDir: 'build',
   },
+
   test: {
     globals: true,
     environment: 'jsdom',
